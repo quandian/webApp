@@ -19,19 +19,19 @@
     <ion-content style="background:#e5e5e5">
         <div class="topbg">
             <ion-slide-box auto-play="true" does-continue="true" slide-interval="4000" >
-                <ion-slide ng-repeat="topbanner in topbanners">
-                    <div class="row">
+                <ion-slide ng-repeat="topbannerpic in topbannerpics">
 
-                        <div class="banner_img col col-33">
-                            <img class="featured-slide featured-slide-1" ng-src="{{topbanner.imgsrcT}}">
-                            <img class="featured-slide featured-slide-2" ng-src="{{topbanner.imgsrcB}}">
-                        </div>
+                    <a ui-sref="tabs.cooklink"><img ng-src="{{topbannerpic.bannerpic}}"></a>
+                    <!--<div class="row">-->
+                        <!--<div class="banner_img col col-33">-->
+                            <!--<img class="featured-slide featured-slide-1" ng-src="{{topbanner.imgsrcT}}">-->
+                            <!--<img class="featured-slide featured-slide-2" ng-src="{{topbanner.imgsrcB}}">-->
+                        <!--</div>-->
 
-                        <div class="col col-offset-10" style="color:#fff">
-                            <h5 style="color:#fff">{{topbanner.title}}</h5>
-                            <p class="textp">{{topbanner.content}}</p>
-                        </div>
-
+                        <!--<div class="col col-offset-10" style="color:#fff" style="width:200px;height:120px;">-->
+                            <!--<h5 style="color:#fff">{{topbanner.title}}</h5>-->
+                            <!--<p class="textp">{{topbanner.content}}</p>-->
+                        <!--</div>-->
                     </div>
                 </ion-slide>
             </ion-slide-box>

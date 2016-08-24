@@ -58,21 +58,28 @@ myapp.config(function($stateProvider,$urlRouterProvider,$ionicConfigProvider){
         }}
     });
     //菜谱路由
-    //$stateProvider.state("tabs.cookmain",{
-    //    url:"/cookmain",
-    //    views:{"tabs-home":{
-    //        templateUrl:"views/cookbook/cookmain1.html",
-    //        controller:"cookmainCtrl"
-    //    }}
-    //});
-    ////菜谱下的详细菜单路由
-    //$stateProvider.state("tabs.cookbook",{
-    //    url:"/cookbook/:cookbookid/:cooktitle",
-    //    views:{"tabs-home":{
-    //        templateUrl:"views/cookbook/cookbook1.html",
-    //        controller:"cookbookCtrl"
-    //    }}
-    //});
+    $stateProvider.state("tabs.cookmain",{
+        url:"/cookmain",
+        views:{"tabs-home":{
+            templateUrl:"views/cookbook/cookmain1.html",
+            controller:"cookmainCtrl"
+        }}
+    });
+    //菜谱下的详细菜单路由
+    $stateProvider.state("tabs.cookbook",{
+        url:"/cookbook/:cookbookid/:cooktitle",
+        views:{"tabs-home":{
+            templateUrl:"views/cookbook/cookbook1.html",
+            controller:"cookbookCtrl"
+        }}
+    });
+    //单独静态页面菜谱链接
+    $stateProvider.state("tabs.cooklink",{
+        url:"/cooklink",
+        views:{"tabs-home":{
+            templateUrl:"views/cookbook/cookbook.html",
+        }}
+    });
 
     $stateProvider.state("tabs.chat",{
         url:"/chat",

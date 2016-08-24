@@ -16,9 +16,9 @@ a{text-decoration: none}
 #tabs .ion-ios-location:before{color:#EF7E00}
 #tabs .ion-ios-cart:before{color:#EF7E00}
 #tabs .tab-item{color:#EF7E00}
-.topbg {
-    background:url(../images/bg1.jpg) no-repeat left center;
-}
+/*.topbg {*/
+    /*background:url(../images/bg1.jpg) no-repeat left center;*/
+/*}*/
 
 .featured-slide {
     box-shadow: -4px 2px 12px rgba(0, 0, 0, 0.3);

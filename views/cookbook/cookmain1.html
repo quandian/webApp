@@ -1,0 +1,12 @@
+<ion-view title="最新菜谱">
+    <ion-content style="background:#e5e5e5">
+        <div class="list card" ng-repeat="item in data">
+            <div class="item item-body">
+                <a href="#tabs/cookbook/{{item.id}}/{{item.title}}"><img class="full-imgage" ng-src="{{item.albums[0]}}"></a>
+                <h2>{{item.title}}</h2>
+                <p class="subdued">548人浏览 · 48人收藏</p>
+            </div>
+        </div>
+
+    </ion-content>
+</ion-view>
